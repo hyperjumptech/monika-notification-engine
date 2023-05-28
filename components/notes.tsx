@@ -13,7 +13,8 @@ export default function Notes() {
           You are using the latest WhatsApp version. Supported versions are the
           following or greater:
           <ul>
-            <li>- Android: 2.21.15.15SMBA: 2.21.15.15</li>
+            <li>- Android: 2.21.15.15</li>
+            <li>- SMBA: 2.21.15.15</li>
             <li>- iOS: 2.21.170.4</li>
             <li>- SMBI: 2.21.170.4</li>
             <li>- KaiOS: 2.2130.10</li>
