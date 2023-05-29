@@ -61,11 +61,11 @@ export default function Header({
                 </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className="flex items-center px-3 py-2 font-sans font-bold leading-snug text-white underline hover:opacity-75"
                   href="/">
                   <span className="ml-2">WhatsApp Notifier</span>
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
                 <a
@@ -136,11 +136,11 @@ export default function Header({
                 </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   href="/"
                   className="flex items-center px-3 py-2 font-sans font-bold leading-snug underline text-monika-black hover:opacity-75">
-                  <span className="ml-2 undeline">WhatsApp Notifier</span>
-                </Link>
+                  <span className="ml-2">WhatsApp Notifier</span>
+                </a>
               </li>
               <li className="nav-item">
                 <a
