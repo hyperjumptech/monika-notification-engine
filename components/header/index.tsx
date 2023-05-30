@@ -3,6 +3,35 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Button from '../button';
+import styled from 'styled-components';
+
+const WhiteLink = styled.a`
+  display: flex;
+  align-items: items-center;
+  padding: 6px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: white;
+  text-decoration-line: underline;
+  &:hover {
+    opacity: 0.75;
+  }
+  margin-left: 4px;
+`;
+
+const BlackLink = styled.a`
+  display: flex;
+  align-items: items-center;
+  padding: 4px 10px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: black;
+  text-decoration-line: underline;
+  &:hover {
+    opacity: 0.75;
+  }
+  margin-left: 10px;
+`;
 
 type HeaderProps = {
   isMobileMenuCollapsed?: boolean;
@@ -61,10 +90,8 @@ export default function Header({
                 </a>
               </li>
               <li className="nav-item">
-                <Link
-                  className="flex items-center px-3 py-2 font-sans font-bold leading-snug text-white underline hover:opacity-75"
-                  href="/">
-                  <span className="ml-2">WhatsApp Notifier</span>
+                <Link href="/">
+                  <WhiteLink>WhatsApp Notifier</WhiteLink>
                 </Link>
               </li>
               <li className="nav-item">
@@ -136,10 +163,8 @@ export default function Header({
                 </a>
               </li>
               <li className="nav-item">
-                <Link
-                  href="/"
-                  className="flex items-center px-3 py-2 font-sans font-bold leading-snug underline text-monika-black hover:opacity-75">
-                  <span className="ml-2 undeline">WhatsApp Notifier</span>
+                <Link href="/">
+                  <BlackLink> WhatsApp Notifier</BlackLink>
                 </Link>
               </li>
               <li className="nav-item">
